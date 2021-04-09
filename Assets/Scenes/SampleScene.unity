@@ -160,7 +160,7 @@ MonoBehaviour:
   health: 3
   shield: {fileID: 4893794423447708775, guid: fdea1e50f345ae34c8eed113e55b025e, type: 3}
   life: {fileID: 1440966452}
-  gameOver: {fileID: 0}
+  gameOver: {fileID: 438227367}
 --- !u!212 &324304326
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -363,13 +363,14 @@ GameObject:
   - component: {fileID: 438227370}
   - component: {fileID: 438227369}
   - component: {fileID: 438227371}
+  - component: {fileID: 438227372}
   m_Layer: 5
   m_Name: GameOverPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &438227368
 RectTransform:
   m_ObjectHideFlags: 0
@@ -434,12 +435,24 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 438227367}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff1d3ad6502307442a1c732509c8e21b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   activeStates: 02000000
+--- !u!114 &438227372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438227367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec9bd7fcd4e413346860581d9252bacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1309,7 +1322,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1894015162
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1375,7 +1388,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1894015161}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff1d3ad6502307442a1c732509c8e21b, type: 3}
   m_Name: 
