@@ -32,11 +32,11 @@ public class PlayerControler : MonoBehaviour
     {
         life.text = health.ToString();
 
-        if (health <=0 && gm.gameState == GameManager.GameState.MENU){
+        if (health <=0){
             
-            gm.changeState(GameManager.GameState.MENU);
-            // gameOver.SetActive(true);
-            // Destroy(gameObject);
+            // gm.changeState(GameManager.GameState.MENU);
+            gameOver.SetActive(true);
+            Destroy(gameObject);
             
 
         }

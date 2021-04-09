@@ -12,9 +12,9 @@ public class Restart : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && gm.gameState == GameManager.GameState.END){
-            gm.changeState(GameManager.GameState.GAME);
-            // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        if (Input.GetKeyDown(KeyCode.Space)){
+            // gm.changeState(GameManager.GameState.GAME);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }
