@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     private static GameManager _instance;
 
     private GameManager(){
-        gameState = GameState.GAME;
+        gameState = GameState.MENU;
     }
 
     public static GameManager GetInstance(){

@@ -22,23 +22,20 @@ public class PlayerControler : MonoBehaviour
 
     void Start()
     {
-        gm = GameManager.GetInstance();
         shield = transform.Find("Shield").gameObject;
         shield.SetActive(false);
+        // Time.timeScale = 0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        life.text = health.ToString();
+        life.text = ("Life: " + health.ToString());
 
         if (health <=0){
-            
-            // gm.changeState(GameManager.GameState.MENU);
             gameOver.SetActive(true);
             Destroy(gameObject);
-            
-
+            Time.timeScale = 0f;
         }
 
         transform.position = Vector2.MoveTowards(transform.position, pos, speed*Time.deltaTime);

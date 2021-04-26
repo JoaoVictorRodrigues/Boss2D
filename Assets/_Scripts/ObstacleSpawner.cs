@@ -5,7 +5,6 @@ using UnityEngine;
 public class ObstacleSpawner : MonoBehaviour
 {
     public GameObject[] obstaclePositions;
-    public GameObject[] shieldPosition;
     private float timeBtwSpawn;
     public float startTimeBtwSpawn;
     public float decreaseTime;
@@ -16,7 +15,6 @@ public class ObstacleSpawner : MonoBehaviour
         if (timeBtwSpawn <= 0 ){
             
             Instantiate(obstaclePositions[random],transform.position,Quaternion.identity);
-            Instantiate(shieldPosition[random],transform.position,Quaternion.identity);
             
             timeBtwSpawn = startTimeBtwSpawn;
             if (startTimeBtwSpawn > minTime){

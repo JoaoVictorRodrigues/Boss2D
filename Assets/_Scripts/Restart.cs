@@ -5,16 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class Restart : MonoBehaviour
 {
-    GameManager gm;
-
     void Start(){
-        gm = GameManager.GetInstance();
+       
     }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space)){
-            // gm.changeState(GameManager.GameState.GAME);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Time.timeScale = 1f;
         }
+        if (Input.GetKeyDown(KeyCode.M)){
+            SceneManager.LoadScene("Menu");
+            Time.timeScale = 1f;
+        }
+    }
+    public void MainMenu(){
+        SceneManager.LoadScene("Menu");
     }
 }
